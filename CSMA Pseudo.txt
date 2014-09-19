@@ -1,0 +1,14 @@
+int nodes;
+int slotLength = 10000*0.05
+
+array sendList;
+
+function CSMACD () {
+	foreach (nodes as node) {
+		if (node.nodeWantsToSend()) {
+			addToSendList();
+		}
+	}
+
+	
+}

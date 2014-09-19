@@ -1,0 +1,18 @@
+System.out.println("List of all files on server with trust ring of circumference: " + client.getMinimumTrust());
+			System.out.println("*******************************************************************************");
+			client.establishConnection();
+			client.sendInt(2);
+			client.sendInt(client.getMinimumTrust());
+			
+			byte[] data = client.receiveBytes();
+			for (int i = 0; i < data.length; i++) {
+				System.out.print((char)data[i]);
+			}
+			System.out.println("*******************************************************************************");
+			return;
+			
+			From the client
+			
+			from the server
+			
+			extra trustworthy
